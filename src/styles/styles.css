@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'Windlass';
+  src: url('../assets/fonts/Windlass.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Breathe Fire';
+  src: url('../assets/fonts/Breathe Fire.otf'); /* Safari, Android, iOS */
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Outfit', sans-serif; */
+
+body {
+  font-family: 'Windlass';
+  font-size: 16px;
+}
+
+#gaman-navbar {
+  background-color: #070700 !important;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+#gaman-navbar .navbar-brand {
+  display: block;
+}
+#gaman-navbar .navbar-nav {
+  margin-left: auto;
+}
+#gaman-navbar .navbar-nav .nav-item {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+#gaman-navbar .navbar-nav .nav-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#gaman-navbar .navbar-nav .nav-link:hover {
+  filter: brightness(0.75);
+}
+
+#gaman-navbar .social-nav {
+  margin-left: 0;
+}
+
+#gaman-navbar .social-nav .nav-item {
+  margin: 0 13px 0 0;
+}
+
+#gaman-navbar .social-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c42f42;
+  width: 43px;
+  height: 43px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+#gaman-navbar .social-nav .nav-link:hover {
+  filter: brightness(0.75);
+}
+
+#gaman-navbar .navbar-toggler {
+  color: white;
+  border: none;
+}
+
+@media (max-width: 991px) {
+  #gaman-navbar .navbar-nav .nav-item {
+    text-align: center;
+  }
+  #gaman-navbar .social-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* section one start */
+#section-one {
+  position: relative;
+  padding-top: 49.375%;
+  /* background: url('../assets/images/banner_1.jpg') no-repeat; */
+  background-position: top center;
+  background-size: 100% 100%;
+}
+
+#section-one .logo {
+  position: absolute;
+  width: 36.66%;
+  height: auto;
+  left: 2.39%;
+  top: 2.21%;
+  user-select: none;
+}
+
+#section-one .btn-play {
+  position: absolute;
+  right: 0;
+  bottom: 1.83%;
+  width: 38.33%;
+  height: 14.02%;
+  cursor: pointer;
+}
+
+#section-one .btn-play:hover {
+  filter: brightness(0.75);
+}
+
+#section-one .btn-play img {
+  width: 100%;
+  height: 100%;
+}
+
+#section-one .day-count-selector {
+  position: absolute;
+  right: 0;
+  top: 5.37%;
+  background: #010204;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  cursor: pointer;
+}
+
+#section-one .day-count-selector .btn-select {
+  width: 110px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-one .day-count-selector .btn-select:hover {
+  filter: brightness(0.75);
+}
+
+#section-one .day-count-selector .btn-select.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+/* section one end */
+
+/* section two start */
+#section-two {
+  position: relative;
+  height: 791px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+#section-two .img-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+#section-two .container {
+  z-index: 1;
+}
+
+#section-two .book-div {
+  width: 382px;
+  height: 572px;
+  border: 1px solid black;
+  position: relative;
+  padding: 90px 57px;
+  background: url('../assets/images/book.png') no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Breathe Fire';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #270a04;
+  text-transform: uppercase;
+}
+
+#section-two .book-div:first-child {
+  border-right: none;
+}
+
+#section-two .book-div h3.title {
+  font-family: 'Breathe Fire';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #270a04;
+  margin: 0 0 25px 0;
+}
+/* section two end */
+
+/* section-three start */
+#section-three {
+  background-color: #010204;
+  min-height: 809px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: black;
+}
+
+#section-three .img-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#section-three .container {
+  z-index: 1;
+}
+#section-three h1.title {
+  font-family: 'Breathe Fire';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 81px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 29px 0;
+}
+
+#section-three .description {
+  font-family: 'Breathe Fire';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 0 22px 0;
+}
+
+#item-select-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#item-select-wrapper .btn-item-selector {
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #202226;
+  font-family: 'Breathe Fire';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 15px;
+  text-transform: uppercase;
+  flex: 0 0 30%;
+  height: 145px;
+  margin: 0 3% 30px 0;
+  cursor: pointer;
+}
+
+#item-select-wrapper .btn-item-selector img {
+  margin: 0 0 16px 0;
+}
+
+#item-select-wrapper .btn-item-selector:hover {
+  filter: brightness(0.75);
+}
+
+#item-select-wrapper .btn-item-selector.active {
+  background-color: #c42f42;
+}
+/* section-three end */
+
+/* section four start */
+#section-four {
+  position: relative;
+  height: 1012px;
+  background-color: black;
+  padding-top: 89px;
+  padding-bottom: 97px;
+}
+#section-four .img-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+#section-four .container {
+  z-index: 1;
+}
+
+#section-four h1.title {
+  font-family: 'Breathe Fire';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 81px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 21px 0;
+}
+
+#section-four .protocol-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+/* section four end */
+
+/* section-footer start */
+#gaman-footer {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
+#gaman-footer .footer-text {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Windlass';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
