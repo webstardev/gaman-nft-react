@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import TitleBg from '../../../assets/images/ttl5.png';
 import BgPng from '../../../assets/images/bx2.png';
 
-const ProtocolItem = ({ protocolItem }) => {
+const ProtocolItem = ({ wrapperClass = '', protocolItem }) => {
   return (
-    <ComponentContainer>
+    <ComponentContainer className={wrapperClass}>
       <div className='img-wrapper'>
         <img className='img-protocol-back' src={BgPng} alt='protocol bg' />
         <img
@@ -62,7 +62,8 @@ const ComponentContainer = styled.div`
       position: absolute;
       transform: translateX(-50%);
       left: 50%;
-      top: 23px;
+      top: 7%;
+      width: 86%;
     }
   }
 
@@ -76,5 +77,13 @@ const ComponentContainer = styled.div`
     align-items: center;
     color: #ffffff;
     margin: 25px 0 0 0;
+  }
+
+  @media (max-width: 991px) {
+    .description {
+      font-size: 13px;
+      line-height: 22px;
+      margin-top: 19px;
+    }
   }
 `;

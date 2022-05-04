@@ -14,6 +14,11 @@ font-family: 'Outfit', sans-serif; */
 body {
   font-family: 'Windlass';
   font-size: 16px;
+  overflow-x: hidden;
+}
+
+section {
+  overflow: hidden;
 }
 
 #gaman-navbar {
@@ -143,6 +148,11 @@ body {
   justify-content: center;
 }
 
+#section-one .day-count-selector .btn-select img {
+  width: 90px;
+  height: 90px;
+}
+
 #section-one .day-count-selector .btn-select:hover {
   filter: brightness(0.75);
 }
@@ -150,6 +160,26 @@ body {
 #section-one .day-count-selector .btn-select.active {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  #section-one .day-count-selector {
+    top: 27px;
+    width: 82px;
+    height: 41px;
+    border-radius: 6px 0px 0px 6px;
+    padding: 2px;
+  }
+
+  #section-one .day-count-selector .btn-select {
+    width: 38px;
+    height: 37px;
+  }
+
+  #section-one .day-count-selector .btn-select img {
+    width: 33px;
+    height: 33px;
+  }
 }
 /* section one end */
 
@@ -178,13 +208,13 @@ body {
 
 #section-two .book-div {
   width: 382px;
-  height: 572px;
+  height: 580px;
   border: 1px solid black;
   position: relative;
-  padding: 90px 57px;
+  padding: 70px 57px;
   background: url('../assets/images/book.png') no-repeat;
   background-size: 100% 100%;
-  font-family: 'Breathe Fire';
+  font-family: 'Windlass';
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -208,7 +238,29 @@ body {
   align-items: center;
   text-transform: capitalize;
   color: #270a04;
-  margin: 0 0 25px 0;
+  margin: 0 0 5px 0;
+}
+
+@media (max-width: 991px) {
+  #section-two {
+    height: 396px;
+  }
+
+  #section-two .book-div {
+    font-size: 6px;
+    line-height: 10px;
+    letter-spacing: 0.01em;
+    width: 196px;
+    height: 298px;
+    padding: 46px 26px 36px;
+    overflow: hidden;
+  }
+
+  #section-two .book-div h3.title {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
 }
 /* section two end */
 
@@ -245,8 +297,19 @@ body {
   margin: 0 0 29px 0;
 }
 
+#section-three .anim-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-three .anim-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
 #section-three .description {
-  font-family: 'Breathe Fire';
+  font-family: 'Windlass';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -269,7 +332,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #202226;
-  font-family: 'Breathe Fire';
+  font-family: 'Windlass';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -295,6 +358,50 @@ body {
 
 #item-select-wrapper .btn-item-selector.active {
   background-color: #c42f42;
+}
+
+@media (max-width: 1200px) {
+  #item-select-wrapper .btn-item-selector {
+    flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 991px) {
+  #section-three {
+    height: auto;
+    min-height: auto;
+    padding-top: 51px;
+    padding-bottom: 49px;
+  }
+
+  #section-three .img-back {
+    width: auto;
+    height: 100%;
+  }
+
+  #section-three h1.title {
+    font-size: 33px;
+    line-height: 38px;
+  }
+  #section-three .description {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0 0 11px 0;
+  }
+  #item-select-wrapper {
+    margin-top: 11px;
+  }
+  #item-select-wrapper .btn-item-selector {
+    flex: 0 0 47%;
+    margin-right: 6%;
+    margin-bottom: 18.6px;
+    font-size: 15px;
+    line-height: 10px;
+  }
+
+  #item-select-wrapper .btn-item-selector:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 /* section-three end */
 
@@ -336,6 +443,32 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 991px) {
+  #section-four {
+    height: auto;
+    padding-top: 45px;
+    padding-bottom: 53px;
+  }
+  #section-four .img-back {
+    height: 100%;
+    width: auto;
+  }
+  #section-four h1.title {
+    font-size: 33px;
+    line-height: 38px;
+    margin: 0;
+  }
+
+  #section-four .protocol-wrapper {
+    flex-wrap: wrap;
+  }
+
+  #section-four .protocol-item-wrapper {
+    flex: 0 0 387px;
+    margin: 32px auto 0;
+  }
+}
 /* section four end */
 
 /* section-footer start */
@@ -358,4 +491,17 @@ body {
   align-items: center;
   text-align: center;
   color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  #gaman-footer {
+    height: auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  #gaman-footer .footer-text {
+    font-size: 15px;
+    line-height: 10px;
+    justify-content: center;
+  }
 }
