@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Navbar id='gaman-navbar' bg='dark' expand='lg' variant='dark'>
-        <Container fluid>
+        <Container>
           <Navbar.Brand href='#'>
             <img src={LogoPng} alt='logo' />
           </Navbar.Brand>
