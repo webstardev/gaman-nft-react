@@ -24,11 +24,7 @@ const BookSection = () => {
         {openBook === BOOK_STATS.CLOSE && (
           <div className='btn-book' onClick={onBook}></div>
         )}
-        {openBook === BOOK_STATS.OPENING && (
-          <div className='anim-book'>
-            <img src={BookAnimGif} alt='book anim' />
-          </div>
-        )}
+        {openBook === BOOK_STATS.OPENING && <div className='anim-book'></div>}
         {openBook === BOOK_STATS.OPENED && (
           <>
             <div className='book-div'>

@@ -257,6 +257,19 @@ section {
   height: 580px;
 }
 
+#section-two .anim-book {
+  width: 580px;
+  height: 580px;
+  background: url('../assets/images/book.gif') no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+#section-two .anim-book img {
+  width: 100%;
+  height: auto;
+}
+
 #section-two .btn-book:hover {
   filter: brightness(0.75);
 }
@@ -302,6 +315,11 @@ section {
   }
 
   #section-two .btn-book {
+    width: 298px;
+    height: 298px;
+  }
+
+  #section-two .anim-book {
     width: 298px;
     height: 298px;
   }
