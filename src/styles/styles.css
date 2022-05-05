@@ -301,6 +301,11 @@ section {
     height: 396px;
   }
 
+  #section-two .btn-book {
+    width: 298px;
+    height: 298px;
+  }
+
   #section-two .book-div {
     font-size: 6px;
     line-height: 10px;

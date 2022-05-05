@@ -1,18 +1,35 @@
 import Bg1Png from '../../../assets/images/bg1.png';
+import BookAnimGif from '../../../assets/images/book.gif';
+import { useState } from 'react';
 
-import { useState, useEffect } from 'react';
+const BOOK_STATS = {
+  CLOSE: 0,
+  OPENING: 1,
+  OPENED: 2,
+};
 
 const BookSection = () => {
-  const [openBook, setOpen] = useState(false);
+  const [openBook, setOpen] = useState(BOOK_STATS.CLOSE);
 
+  const onBook = () => {
+    setOpen(BOOK_STATS.OPENING);
+    setTimeout(() => {
+      setOpen(BOOK_STATS.OPENED);
+    }, 2900);
+  };
   return (
     <section id='section-two'>
       <img className='img-back' src={Bg1Png} alt='bg 1' />
       <div className='container'>
-        {!openBook && (
-          <div className='btn-book' onClick={() => setOpen(true)}></div>
+        {openBook === BOOK_STATS.CLOSE && (
+          <div className='btn-book' onClick={onBook}></div>
         )}
-        {openBook && (
+        {openBook === BOOK_STATS.OPENING && (
+          <div className='anim-book'>
+            <img src={BookAnimGif} alt='book anim' />
+          </div>
+        )}
+        {openBook === BOOK_STATS.OPENED && (
           <>
             <div className='book-div'>
               <h3 className='title'>PROLOGUE</h3>
